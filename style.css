@@ -1,0 +1,31 @@
+body,html{
+  
+    font-family: sans-serif;
+    margin:  auto 0;
+    padding: 0 ;
+    background-color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+
+ }
+.container_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.trait_dessus{
+    border-top: 1px solid rgba(53, 59, 60, 0.347);
+    padding-bottom: 10px;
+}
+/**Footer****/
+.logo_noir{
+    width: 90px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.footer_text{
+    color: rgba(0, 0, 0, 0.372);
+    padding-bottom: 40px;
+    line-height:25px ;
+    text-align: center;
+}
+/*******************************************/
