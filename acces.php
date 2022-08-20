@@ -41,7 +41,7 @@
           
 <!--menu + logo version desktop-->
             <div class="menu_logo_container">
-           <!--********************script menu****************-->
+           
             <script src="main.js"></script>
 
                 <a href="index.php">
@@ -98,6 +98,7 @@
         </nav>
 
         <div class="trait_dessus"></div>
+
         <h1>
             Catégorie de produits 
         </h1>
@@ -106,6 +107,7 @@
         <div class="fleche"> > </div>
         <a class="text_categorie" href="index.php">Catégorie de produits </a>
         </div> 
+
     </header>
    
     <section id="prduit1" class="section_p1">
@@ -113,7 +115,8 @@
 
         <div>
             <div class="pro">
-               <a href="produit.php"><img src="Image\drone2.jpg" alt="produit"></a>
+                <img src="Image\drone2.jpg" alt="produit">
+
             </div>
             <div class="description">
                 <h3 class="nom_produit">nom produit</h3>
@@ -146,30 +149,6 @@
        
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer>
     <div class="svg_flex">

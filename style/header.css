@@ -1,0 +1,169 @@
+*{
+    font-family: sans-serif;
+    margin:  auto 0;
+    padding: 0 ;
+    font-size: 14px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+ }
+.container_menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top:15px ;
+    padding-bottom:15px ;
+    padding-right: 12px;
+    padding-left: 10px;
+}
+
+.acces_panier,.menu_logo_container{
+    display: none;
+}
+
+.flex_acces_panier{
+    display:flex;
+    cursor: pointer;
+}
+
+.acces__mobile{
+    padding-right: 10px;
+}
+
+.logo_icone{
+    width: 90px;
+}
+/***menu burger******/
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #d6d6d6eb;
+    padding-top: 60px;
+    transition: left 0.7s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  font-weight: bold;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+  color: rgb(17, 17, 17);
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+  /*****/
+.input{
+    display:none;
+}
+
+.trait_dessus{
+    border-top: 3px solid rgba(164, 167, 168, 0.193);
+    
+}
+.accueil{
+    display: flex;
+    margin-left: 5%;
+
+}
+.text_accueil{
+    padding-right: 10px;
+    color: rgb(33, 200, 237);
+    font-weight: bold;
+    
+}
+.text_categorie{
+    padding-left: 10px;
+}
+.fleche{
+    color: rgb(33, 200, 237);
+    font-weight: bold;
+}
+
+/****H1*******/
+h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+@media (min-width: 800px){
+
+
+     .acces_panier_mobile,.menu_icone, .logo_icone{
+         display: none;
+     }
+        /**button***/
+     .acces_panier{
+         display: flex;
+     }
+     .flex_acces_panier{
+       
+         border: 2px solid rgba(90, 89, 89, 0.362);
+         border-radius: 5px;
+         padding-left: 5px;
+         padding-right: 15px;
+         padding-left: 10px;
+         font-weight: bold;
+         margin-right: 10px;
+      
+     }
+     .input{
+         display:block;
+     }
+    
+     .menu_logo, .menu_logo_flex{
+         display:flex;
+     }
+    .text_acces_panier{
+     padding: 10px;
+    }
+    .menu_logo_container{
+     display: block;
+     padding-left: 15px;
+     }
+     .menu__logo_pad{
+         padding-right: 10px;
+     }
+   
+    .accueil{
+     display: flex;
+    }
+}

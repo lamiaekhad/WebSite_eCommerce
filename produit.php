@@ -41,7 +41,7 @@
           
 <!--menu + logo version desktop-->
             <div class="menu_logo_container">
-           <!--********************script menu****************-->
+           
             <script src="main.js"></script>
 
                 <a href="index.php">
@@ -98,78 +98,28 @@
         </nav>
 
         <div class="trait_dessus"></div>
-        <h1>
-            Catégorie de produits 
-        </h1>
-        <div class="accueil">
-            <a class="text_accueil" href="#">Accueil</a>
-        <div class="fleche"> > </div>
-        <a class="text_categorie" href="index.php">Catégorie de produits </a>
-        </div> 
+
     </header>
-   
-    <section id="prduit1" class="section_p1">
-      <div class="pro_container">
-
+<section>
+    <div class="container_flex">
         <div>
-            <div class="pro">
-               <a href="produit.php"><img src="Image\drone2.jpg" alt="produit"></a>
+            <div class="accueil">
+                <a class="text_accueil" href="#">Accueil</a>
+            <div class="fleche"> > </div>
+            <a class="text_categorie" href="produit.php">Catégorie de produits </a>
             </div>
-            <div class="description">
-                <h3 class="nom_produit">nom produit</h3>
-                <p class="prix_produit"> $55.99</p>
+        </div> 
+        <div id="prod_1" class="details_produit">
+
+            <div class="image-grid">
+                <img class="image-grid-col-2 image-grid-row-2" src="Image\drone1.jpg" alt="drone">
+                <img src="Image\drone2.jpg" alt="drone2">
+                <img src="Image\drone3.jpg" alt="drone3">
             </div>
+
         </div>
-
-        <div>
-            <div class="pro">
-                <img src="Image\drone2.jpg" alt="produit">
-
-            </div>
-            <div class="description">
-                <h3 class="nom_produit">nom produit</h3>
-                <p class="prix_produit"> $55.99</p>
-            </div>
-        </div>
-
-        <div>
-            <div class="pro">
-                <img src="Image\drone2.jpg" alt="produit">
-
-            </div>
-            <div class="description">
-                <h3 class="nom_produit">nom produit</h3>
-                <p class="prix_produit"> $55.99</p>
-            </div>
-        </div>
-
-       
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+</section>  
 
     <footer>
     <div class="svg_flex">

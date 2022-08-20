@@ -1,0 +1,29 @@
+.svg_flex{
+    display: flex;
+    justify-content: space-evenly;
+   margin-top: 100px;
+   margin-bottom: 50px;
+}
+.logo_noir{
+    width: 90px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.footer_text{
+    color: rgba(0, 0, 0, 0.372);
+    padding-bottom: 20px;
+    line-height:25px ;
+    text-align: center;
+}
+
+
+/*******************************************/
+@media (min-width: 800px){
+
+
+    /*********************footer********************/
+    .svg_flex{
+        margin-left: 30%;
+        margin-right: 30%;
+        }
+}

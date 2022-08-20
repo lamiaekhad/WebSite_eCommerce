@@ -1,0 +1,42 @@
+#produit{
+    text-align: center;
+}
+#prduit1 .pro{
+    width: 250px;
+    min-width: 250px;
+    padding: 10px;
+    border: 1px solid rgba(189, 189, 193, 0.408) ;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(189, 189, 193, 0.408);
+}
+.pro{
+    
+    border-radius: 10px;
+}
+#prduit1 .pro img{
+    width: 100%;
+    height: auto;
+}
+.pro_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+}
+.description{
+   
+    margin-top:10px ;
+    margin-bottom: 40px;
+}
+@media (min-width: 800px){
+
+    .pro_container{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
