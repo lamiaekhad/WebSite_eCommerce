@@ -86,7 +86,7 @@
 .burger-icon span {
   display: block;
   width: 20px;
-  height: 3px;
+  height: 1.5px;
   background-color: black;
   margin: 6px 0;
 }
@@ -113,9 +113,14 @@
     font-weight: bold;
     
 }
+.text_acces_panier{
+    color: black;
+    font-weight: bold;
+}
 .text_categorie{
     padding-left: 10px;
     padding-right: 10px;
+    color: rgb(33, 200, 237);
 }
 .fleche{
     color: rgb(33, 200, 237);
@@ -131,47 +136,94 @@ h1{
     font-size: 25px;
     font-weight: bolder;
 }
+.logo{
+    display: none;
+}
+.wrapi{
+    display: none;
+}
 
 @media (min-width: 800px){
 
-
-     .acces_panier_mobile,.menu_icone, .logo_icone{
-         display: none;
-     }
-        /**button***/
-     .acces_panier{
-         display: flex;
-     }
-     .flex_acces_panier{
-       
-         border: 2px solid rgba(90, 89, 89, 0.362);
-         border-radius: 5px;
-         padding-left: 5px;
-         padding-right: 15px;
-         padding-left: 10px;
-         font-weight: bold;
-         margin-right: 10px;
+    .acces_panier_mobile,.menu_icone, .logo_icone{
+        display: none;
+    }
+       /**button***/
+    .acces_panier{
+        display: flex;
+    }
+    .flex_acces_panier{
       
-     }
-     .input{
-         display:block;
-     }
-    
-     .menu_logo, .menu_logo_flex{
-         display:flex;
-     }
+        border: 2px solid rgba(90, 89, 89, 0.362);
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 15px;
+        padding-left: 10px;
+        font-weight: bold;
+        margin-right: 10px;
+     
+    }
+    .input{
+        display:block;
+    }
+
+    .menu_logo, .menu_logo_flex{
+        display:flex;
+    }
     .text_acces_panier{
-     padding: 10px;
+    padding: 10px;
     }
     .menu_logo_container{
-     display: block;
-     padding-left: 15px;
-     }
-     .menu__logo_pad{
-         padding-right: 10px;
-     }
-   
+    display: block;
+    padding-left: 15px;
+    }
+    .menu__logo_pad{
+        padding-right: 10px;
+    }
+    .logo{
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: 20px
+    }
     .accueil{
      display: flex;
     }
+    .search {
+        width: 100%;
+        display: flex;
+      }
+      
+      .searchTerm {
+        width: 240px;
+        border: 2px solid #00000071;
+        border-right: none;
+        
+        height: 36px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #000000;
+      }
+      
+      .searchTerm:focus{
+        color: #000000;
+      }
+      
+      .searchButton {
+        width: 40px;
+        height: 36px;
+        border: 2px solid #00000071;
+        border-left: none;
+        background: #ffffff;
+        text-align: center;
+        color: rgb(146, 125, 125);
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      
+      /*Resize the wrap to see the search bar change!*/
+      .wrapi{
+        display: block;
+      }
 }
