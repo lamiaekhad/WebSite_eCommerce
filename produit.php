@@ -101,22 +101,34 @@
 
     </header>
 <section>
+
     <div class="container_flex">
         <div>
             <div class="accueil">
                 <a class="text_accueil" href="#">Accueil</a>
             <div class="fleche"> > </div>
             <a class="text_categorie" href="produit.php">Catégorie de produits </a>
+            <div class="fleche"> > </div>
+            <div>
+                produit #1
             </div>
+        </div>
+       
         </div> 
         <div id="prod_1" class="details_produit">
-
             <div class="image-grid">
                 <img class="image-grid-col-2 image-grid-row-2" src="Image\drone1.jpg" alt="drone">
                 <img src="Image\drone2.jpg" alt="drone2">
                 <img src="Image\drone3.jpg" alt="drone3">
             </div>
-
+        </div>
+        <div class="info_produit">
+            <h2 class="titre_produit"> Produit #1</h2>
+            <p class="prix_produit"> $ 550.99</p>
+            <p class="des_produit">
+                Brand DJI, Colour Gray, Mirror adjustment Remote Control,
+                Media type Micro SD,<br> Video capture resolution FHD 1080p
+            </p>
         </div>
     </div>
 </section>  

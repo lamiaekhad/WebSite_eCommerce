@@ -1,9 +1,8 @@
 .image-grid {
   --gap: 10px;
   --num-cols: 2;
-  --row-width: 300px;
   
-
+  
   box-sizing: border-box;
   padding: var(--gap);
 
@@ -26,8 +25,25 @@
 .image-grid-row-2 {
   grid-row: span 2;
 }
+
 .details_produit{
   margin:10px;
+}
+
+.titre_produit{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.prix_produit, .des_produit{
+  margin-top: 5px;
+}
+.prix_produit{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.info_produit{
+  margin-left: 20px;
 }
 
 
@@ -40,11 +56,18 @@
     background-color: black;
   }
   .details_produit{
-    width: 80%;
+    width: 50%;
     height: auto;
    
   }
   .container_flex{
     display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .details_produit{
+    margin:0;
   }
 }
