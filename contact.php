@@ -104,16 +104,21 @@
 
 <section>
         <div class="contenu_contact">
-
-            <div class="flex_contact">
-
-                <div class="input_contact">
-                     <h2 class="contact_us"> Contact us!</h2>
+        <h2 class="contact_us"> Contact us!</h2>
                      <p class="text_please_fill">Please fill out this from to send your messaage:</p>
-                     <figure class="input_mobile">
-                          <img class="img_input_mobile" src="Image\input_mobile.PNG" alt="input_mobile">
-                    </figure>
-                   <img class="img_input_laptop" src="Image\input.PNG" alt="input">
+                     
+            <div class="flex_contact">
+            
+                <div class="input_contact">
+                     <div>
+                        <form action="contact.php">
+                           <input class="input_text" type="text" id="fname" name="Name" placeholder="Name">
+                           <input class="input_text" type="text" id="Sname" name="Surnames" placeholder="Surnames">
+                           <input class="input_text" type="text" id="email" name="Email" placeholder="Email">
+                           <input class="input_text" type="text" id="subject" name="Subject" placeholder="Subject">
+                           <textarea class="input_text" id="subject" name="subject" placeholder="Message" style="height:100px"></textarea>
+                        </form>
+                     </div>
                 </div>
 
                 <div>
@@ -141,7 +146,20 @@
             </div>
 
         </div>
-
+        <label class="data_check" >
+            <input  type="checkbox">I authorize the treatment of my data.
+            <span class="checkmark"></span>
+        </label>
+    </section>
+    <section>
+        <div class="section_button_start">
+            <div class="text_last_section">
+                <p class="text_do_you_want" >Do you want to start with B-system today?</p>
+            </div>
+            <div class="button_start_with">
+                <button class="start_with"> Start with B_system </button>
+            </div>
+        </div>
     </section>
 
     <footer>

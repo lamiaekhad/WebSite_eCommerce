@@ -16,7 +16,9 @@
     text-align: center;
 }
 
-
+.test{
+    color: red;
+}
 /*******************************************/
 @media (min-width: 800px){
 

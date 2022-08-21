@@ -51,7 +51,7 @@
   font-size: 100%;
   margin-right: 20px;
 }
-.start_with{
+.start_with1{
   background-color: rgb(0, 171, 209);
   color: rgba(255, 255, 255, 0.921);
   border: 0 solid rgba(255, 255, 255, 0.839);
@@ -66,7 +66,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-.button_start_with{
+.button_start_with1{
   margin-top: 30px;
 }
 .version_descktop{
@@ -105,10 +105,9 @@
     margin-top: 60px;
     margin-left: 40px;
   }
-  .start_with{
+  .start_with1{
     margin-left:20px;
     margin-top: 50px;
-   
   }
   .titre_produit{
     padding-top: 30px;

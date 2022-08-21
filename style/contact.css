@@ -1,3 +1,220 @@
+.input_text {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    opacity: 0.5;
+    transition: 0.3s ease all; 
+    -moz-transition: 0.3s ease all; 
+    -webkit-transition: 0.3s ease all;
+  }
+
 .contact_us{
-    margin-left: 20px;
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.info_contact{
+    border: 5px solid white;
+    background-color:  rgb(223, 240, 255);
+    border-radius: 8px;
+    margin: 10px;
+}   
+.women_img{
+    display: none;
+}
+.ecouteurs_svg, .logo_localisation{
+    width: 23px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.text_if_you{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 1.6em;
+}
+.text_please_fill{
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+    color:rgba(118, 118, 118, 0.625) ;
+    line-height: 1.6em;
+}
+.text_numero1{
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+.text_numero2{
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin-top: 4px;
+}
+.localisation{
+    border: 5px solid white;
+    background-color: rgb(248, 248, 248);
+    border-radius: 8px;
+    margin: 10px;
+    margin-bottom: 35px;
+    padding-bottom: 50px;
+}
+.ecouteurs_svg, .logo_localisation{
+    width: 42px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.text_find_offices{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(146, 201, 252);
+    padding-bottom: 15px;
+    line-height: 1.6em;
+}
+
+.start_with{
+    background-color: rgb(0, 171, 209);
+    color: rgba(255, 255, 255, 0.921);
+    border: 0 solid rgba(255, 255, 255, 0.839);
+    border-radius: 5px;
+    width: 185px;
+    height: 52px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.597);
+    font-weight: bold;
+}
+.section_button_start{
+    background-color: rgb(244, 244, 244); 
+    border-bottom: 3px solid rgba(227, 227, 227, 0.832); 
+    padding-bottom: 50px; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+.text_do_you_want{
+    padding-top: 40px ;
+    font-size:20px ;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+.text_last_section{
+   border: 0 solid black;
+   width:70%;
+   height: auto;
+   margin: auto;
+}
+.svg_flex{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.lign_separation{
+    border-bottom: 3px solid rgba(227, 227, 227, 0.832); 
+    padding-bottom: 40px; 
+}
+.data_check{
+    color:rgba(118, 118, 118, 0.625) ;
+    margin-left: 90px;
+}
+
+@media (min-width: 800px){
+
+    .flex_contact{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .contact_us{
+    
+       margin-bottom: 5px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .text_please_fill{
+       
+        text-align: left;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .info_contact{
+        margin-top: 27px;
+        margin-right: 88px;
+        width: 401px;
+    }
+    .localisation{
+        margin-right:50px;
+        width: 400px;
+    }
+    .text_find_offices{
+        padding-bottom: 0;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .women_img{
+        display: block;
+        width: 80px;
+        padding-top: 15px;
+        padding-left:15px ;
+        padding-bottom: 10px;
+    }
+    .ecouteurs_svg{
+        display: none;
+    }
+    .text_if_you ,.text_numero1, .text_numero2 {
+        font-size: 13px;
+    }
+    .text_if_you ,.text_numero1{
+        padding-top: 10px;
+    }
+    .contenu_contact{
+       padding-left: 70px;
+    }
+    
+    /*derniere section*/
+    
+    .start_with{
+        width: 225px;
+        height: 48px;
+    }
+    
+    .text_do_you_want{
+        padding-top: 35px ;
+        padding-bottom: 15px;
+        font-size:20px ;
+        font-weight: lighter;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    .section_button_start{
+        padding-bottom: 50px;
+        border-top: 3px solid rgb(227, 227, 227); 
+    }
+    .text_last_section{
+       border: 0 solid black;
+       width:70%;
+       height: auto;
+       margin: auto;
+    }
+    .svg_flex{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+
 }

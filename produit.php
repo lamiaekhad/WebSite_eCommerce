@@ -131,8 +131,8 @@
                 Media type Micro SD,<br> Video capture resolution FHD 1080p
             </p>
         </div>
-        <div class="button_start_with">
-            <button class="start_with">  Ajouter au panier</button>
+        <div class="button_start_with1">
+            <button class="start_with1">  Ajouter au panier</button>
         </div>
     </div>
 </section>  
@@ -179,8 +179,8 @@
                 </p>
             </div>
 
-            <div class="button_start_with">
-                <button class="start_with">  Ajouter au panier</button>
+            <div class="button_start_with1">
+                <button class="start_with1">  Ajouter au panier</button>
             </div>
         </div>
     </div>
