@@ -78,7 +78,6 @@
 
             <div class="acces_panier">
                 
-                
                 <a class="flex_acces_panier"  href="acces.php">
                     <div class="text_acces_panier">Accès</div>
                     <div href="#">
