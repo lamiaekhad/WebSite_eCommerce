@@ -44,7 +44,6 @@
     background-color: #d6d6d6eb;
     padding-top: 60px;
     transition: left 0.7s ease;
-    
 }
 
 /* Sidenav menu links */
@@ -139,11 +138,56 @@ h1{
 .logo{
     display: none;
 }
-.wrapi{
+.input_search2{
     display: none;
 }
-
-
+.input_search1{
+    display: block;
+}
+.search {
+    width: 100%;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 240px;
+    border: 2px solid #00000071;
+    border-right: none;
+    
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #000000;
+}
+  
+.searchTerm:focus{
+    color: #000000;
+}
+  
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 2px solid #00000071;
+    border-left: none;
+    background: #ffffff;
+    text-align: center;
+    color: rgb(146, 125, 125);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.wrapi1{
+    display: none;
+}
+.wrapi2{
+    display: block;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    position: sticky;
+    top: 0;
+}
 @media (min-width: 800px){
 
     .acces_panier_mobile,.menu_icone, .logo_icone{
@@ -190,40 +234,11 @@ h1{
     .accueil{
      display: flex;
     }
-    .search {
-        width: 100%;
-        display: flex;
-    }
-      
-    .searchTerm {
-        width: 240px;
-        border: 2px solid #00000071;
-        border-right: none;
-        
-        height: 36px;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        color: #000000;
-    }
-      
-    .searchTerm:focus{
-        color: #000000;
-    }
-      
-    .searchButton {
-        width: 40px;
-        height: 36px;
-        border: 2px solid #00000071;
-        border-left: none;
-        background: #ffffff;
-        text-align: center;
-        color: rgb(146, 125, 125);
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        font-size: 20px;
-    }
-      
-    .wrapi{
+   
+    .wrapi1{
         display: block;
+    } 
+    .wrapi2{
+        display: none;
     }
 }

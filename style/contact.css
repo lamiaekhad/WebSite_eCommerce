@@ -1,6 +1,5 @@
 .input_text {
     width: 100%;
-    max-width: 450px;
     padding: 10px;
     border: 1px solid rgb(124, 124, 124);
     border-radius: 4px;
@@ -9,14 +8,17 @@
     resize: vertical;
     opacity: 0.5;
     transition: 0.3s ease all; 
-    -moz-transition: 0.3s ease all; 
-    -webkit-transition: 0.3s ease all;
-  }
+}
 
+.input_contact{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
 .contact_us{
     font-size: 30px;
     padding-top:30px ;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     text-align: center;
     font-weight: bold;
 }
@@ -45,7 +47,7 @@
 .text_please_fill{
     font-size: 16px;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     color:rgba(118, 118, 118, 0.625) ;
     line-height: 1.6em;
 }
@@ -82,7 +84,6 @@
     padding-bottom: 15px;
     line-height: 1.6em;
 }
-
 .start_with{
     background-color: rgb(0, 171, 209);
     color: rgba(255, 255, 255, 0.921);
@@ -96,6 +97,7 @@
     font-size: 15px;
     box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.597);
     font-weight: bold;
+    cursor: pointer;
 }
 .section_button_start{
     background-color: rgb(244, 244, 244); 
@@ -125,11 +127,31 @@
     border-bottom: 3px solid rgba(227, 227, 227, 0.832); 
     padding-bottom: 40px; 
 }
-.data_check{
-    color:rgba(118, 118, 118, 0.625) ;
-    margin-left: 90px;
+.checkmark{
+    width: 18px;
+    height: 16px;
 }
-
+.checktext{
+    color:rgba(118, 118, 118, 0.625) ;
+    font-size: 110%;
+    display: inline;
+}
+.send{
+    background-color: #e9e7e7;
+    color: #b0b0b0;
+    border: 0 solid rgba(255, 255, 255, 0.839);
+    border-radius: 5px;
+    width: 185px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    box-shadow: 0px 0px 20px rgba(212, 210, 210, 0.597);
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
 @media (min-width: 800px){
 
     .flex_contact{
@@ -139,21 +161,25 @@
         margin-left: 2%;
         margin-right: 2%;
     }
+    .input_contact{
+        margin-right: 30px;
+        margin-top: 32px;
+    }
     .contact_us{
-    
-       margin-bottom: 5px;
+        margin-bottom: 5px;
         text-align: left;
         margin-left: 20px;
         margin-top: 50px;
+        padding-bottom: 10px;
     }
     .text_please_fill{
-       
         text-align: left;
         font-size: 12px;
         margin-left: 20px;
+        padding-bottom: 0;
     }
     .info_contact{
-        margin-top: 27px;
+        margin-top: -61px;
         margin-right: 88px;
         width: 401px;
     }
@@ -215,6 +241,9 @@
         margin-left: 30%;
         margin-right: 30%;
     }
-    
+    .send{
+        margin: 0;
+        margin-top: 40px;
+    }
 
 }
