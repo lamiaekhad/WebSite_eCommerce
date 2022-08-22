@@ -1,3 +1,50 @@
 .titre_acces{
    display: none;
 }
+
+.text_login{
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color:rgba(118, 118, 118, 0.625) ;
+    line-height: 1.6em;
+}
+.input_Acces{
+    margin: 10px;
+}
+.login_container{
+    max-width: 350px;
+    margin: auto;
+}
+.button_start_with1{
+    margin-top: 10px;
+}
+.text_forget{
+    text-align: center;
+    padding-top: 20px;
+    color:rgb(33, 200, 237);
+}
+@media (min-width: 800px){
+.titre_acces{
+    display: block;
+}
+.login_container{
+    max-width: 350px;
+    margin: auto;
+}
+.text_forget{
+    text-align:left;
+    padding-left: 12px;
+    
+}
+.text_login{
+    padding-top: 0;
+    padding-right: 20px;
+   
+}
+.start_with1{
+    margin-top: 0;
+    margin-left: 10px;
+}
+}
