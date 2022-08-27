@@ -22,21 +22,40 @@
     flex-direction: column;
     margin-top: 40px;
     align-items: center;
+    
 }
 .description{
    
     margin-top:10px ;
     margin-bottom: 40px;
 }
+.nom_produit{
+    font-size: 20px;
+    padding-left: 5px;
+}
+.prix_produit{
+    font-size: 20px;
+    padding-left: 5px;
+    color: rgb(145, 3, 3);
+    font-weight: bold;
+}
+.historique_prix{
+    padding-left: 20px;
+    text-decoration: line-through;
+}
 @media (min-width: 800px){
 
     .pro_container{
         display: flex;
-        flex-wrap: wrap ;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         flex-direction: row;
         margin-left: 10%;
         margin-right: 10%;
+        margin-right: 15px;
+    }
+    .produit_item{
+        margin-right: 30px;
     }
 
 }

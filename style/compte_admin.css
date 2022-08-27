@@ -1,5 +1,16 @@
-
-
+.choix_admin{
+    margin-left: 20px;
+}
+.text_options, option {
+    font-size: 20px;
+    
+}
+.option{
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    padding-right: 10px;
+}
 @media (min-width: 800px){
 
 }

@@ -97,15 +97,13 @@
 
 .trait_dessus{
     border-top: 3px solid rgba(164, 167, 168, 0.193);
-    
 }
 .accueil{
     display: flex;
     margin-left: 5%;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 20px
-
+    margin-top: 20px;
 }
 .text_accueil{
     padding-right: 10px;
