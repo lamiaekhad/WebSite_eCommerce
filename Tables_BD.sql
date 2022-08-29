@@ -49,15 +49,17 @@ from produit
 where supprimer ='non';
 
 
-Create table user(
+Create table utilisateur(
 iduser int NOT NULL AUTO_INCREMENT,
 Nom varchar(25) NOT NULL,
 prenom varchar(35) NOT NULL,
 nomutilisateur varchar(35) not null,
-courriel varchar(35)not null,
-motdepasse varchar(35) not null,
-administrateur varchar(15) not null,
+courriel varchar(50)not null,
+motdepasse varchar(200) not null,
 primary Key (iduser)
 );
-insert into user(Nom, prenom , nomutilisateur , courriel , motdepasse, administrateur)
-values('lamia', 'khadraoui', 'lami_khad', 'lamiae@gmail.la', '123', 'oui');
+insert into user(Nom, prenom , nomutilisateur , courriel , motdepasse)
+values('lamia', 'khadraoui', 'lami_khad', 'lamiae@gmail.la', '123');
+
+select * from utilisateur;
+select  count(*) from utilisateur where iduser=1;

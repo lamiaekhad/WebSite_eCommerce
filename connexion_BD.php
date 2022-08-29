@@ -16,13 +16,13 @@ public function getConnection(){
         $conn->set_charset("utf8");
         if($conn->connect_error)
         {
-            
+            die("Connection failed: ".mysqli_connect_error());
         }
        
     }
     catch(Exception $e)
     {
-        echo "erreur connection 2"; 
+        echo "erreur connection"; 
     }
     return $conn;
 }

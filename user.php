@@ -1,7 +1,7 @@
 <?php
 
 
-class utilisateur{
+class user{
 
 private $nom;
 private $prenom;
@@ -29,7 +29,10 @@ public function get_motDePasse(){return $this->motDePasse;}
 public function set_confirmation($confirmation){$this->confirmation=$confirmation;}
 public function get_confirmation(){return $this->confirmation;}
 
+
+
 Public function __construct(){}
+
 
 
 }

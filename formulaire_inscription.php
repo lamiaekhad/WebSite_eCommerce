@@ -1,12 +1,10 @@
 
 <?php
+session_start();
 include "controller.php";
 include "header.php";
 ?>
 
-
-
-   
 <section>
     <div class="wrapi2">
                <div class="search">
@@ -21,23 +19,25 @@ include "header.php";
     </h1>
     <div class="login_container">
         <div class="input_Acces">
-        <form method="POST" action="acces.php">
-            <input class="input_text" type="text" id="fname" name="Nom" placeholder="Nom" maxlength="20" required>
-            <input class="input_text" type="text" id="fname" name="Prenom" placeholder="Prenom" maxlength="20" required>
-            <input class="input_text" type="text" id="fname" name="username" placeholder="Nom d'utilisater" maxlength="30" required>
-            <input class="input_text" type="text" id="fname" name="courriel" placeholder="courriel" maxlength="35" required>
-            <input class="input_text" type="password" id="Sname" name="Password" placeholder="Password" maxlength="20" required>
-            <input class="input_text" type="password" id="Sname" name="confirmation" placeholder="confirmation" maxlength="20" required>
-            <div class="button_start_with1">
-                <input class="start_with1" type="submit" name="envoi"> 
-            </div>
-        </form>
+            <form method="POST" action="formulaire_inscription.php">
+                <input class="input_text" type="text" id="fname" name="Nom" placeholder="Nom" maxlength="20" required>
+                <input class="input_text" type="text" id="fname" name="Prenom" placeholder="Prenom" maxlength="20" required>
+                <input class="input_text" type="text" id="fname" name="Nomutilisateur" placeholder="Nom d'utilisater" maxlength="30" required>
+                <input class="input_text" type="text" id="fname" name="courriel" placeholder="courriel" maxlength="35" required>
+                <input class="input_text" type="password" id="Sname" name="Password" placeholder="Password" maxlength="20" required>
+                <input class="input_text" type="password" id="Sname" name="confirmation" placeholder="confirmation" maxlength="20" required>
+                <div class="button_start_with1">
+                    <input class="start_with1" type="submit" name="envoi"> 
+                </div>
+            </form>
         </div>
 <?php
-$user= new controller();
-$theUser = $user->getform();
+
+$control = new controller();
+$use=$control->getNewAccount();
+
+
 ?>
-        
         <a href="acces.php"><p class="text_forget"> Se connecter à un compte existant </p></a>
     </div>
    

@@ -28,5 +28,5 @@ include "header.php";
 </section>
 
  <?php
- include "header.php";
+ include "footer.php";
  ?>
