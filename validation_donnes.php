@@ -12,7 +12,7 @@ public static function ValidationNom($nom)
         $valide = true;
 
     }else{
-        ?> <h3>Nom invalide</h3> <?php
+        ?> <h3>Nom non valide</h3> <?php
     }
     return $valide;
 }
@@ -24,7 +24,7 @@ public static function ValidationPrenom($prenom)
         $valide = true;
 
     }else{
-        ?> <h3>prenom invalide</h3> <?php
+        ?> <h3>Prenom non valide</h3> <?php
     }
     return $valide;
 }

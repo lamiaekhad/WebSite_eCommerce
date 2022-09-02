@@ -1,5 +1,6 @@
 <?php
-include "header.php";
+include "controller.php";
+include "header_code.php";
 ?>
 <section>
     <div class="wrapi2">
@@ -17,14 +18,20 @@ include "header.php";
 
     <div class="login_container">
         <div class="input_Acces">
-            <form  action="acces.php">
-                <input class="input_text" type="text" id="fname" name="User" placeholder="User" required>
-                <input class="input_text" type="password" id="Sname" name="motdepasse" placeholder="Password" required>
+            <form method="POST" action="acces.php">
+                <input class="input_text" type="text" id="fname" name="User" required>
+                <input class="input_text" type="password" id="Sname" name="motdepasse"  required>
                 <div class="button_start_with1">
                         <input class="start_with1" type="submit" name="login" value="Sign in"> 
                 </div>
             </form>
         </div>
+<?php
+
+$control = new controller();
+$control->getLogin();
+
+?>
 
         <a href="#"><p class="text_forget"> Forgot your password?</p></a>
         <a href="formulaire_inscription.php"><p class="text_forget"> Créer un nouveau compte </p></a>

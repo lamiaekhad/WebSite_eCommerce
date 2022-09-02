@@ -1,9 +1,9 @@
 <?php
-include "header.php";
-?>
+include "header_code.php";
 
 
 
-<?php
+
+
 include "footer.php";
 ?>

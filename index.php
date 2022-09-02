@@ -1,8 +1,7 @@
 <?php
-session_start();
 
 require_once 'class_produit.php';
-include "header.php";
+include "header_code.php";
 ?>
 
     <section id="prduit1" class="section_p1">
@@ -26,13 +25,6 @@ include "header.php";
     <?php
     $myProdect = new produit();
     $product = $myProdect->getProductName(); 
-    
-    /*component("Drone 1","200.99","Image\drone1.jpg","$ 499.00");
-    component("Drone 2","185.85","Image\drone2.jpg","");
-    component("Drone 3","250.99","Image\drone3.jpg","$ 320.20");
-    component("Drone 4","100.99","Image\drone4.jpg","");
-    component("Drone 5","90.99","Image\drone5.jpg","$ 150.99");*/
-
     ?>
         </div>
     </section>

@@ -45,16 +45,16 @@ PUBLIC function getProductName(){
     try
     {
         $myconn = $myDataBase->getConnection(); 
-        $sql = "SELECT NomProduit, prix, prixdebase, image from produit where supprimer ='non';";
+        $sql = "SELECT NomProduit, prix, prixdebase, image,id from produit where supprimer ='non';";
         $result = $myconn->query($sql);
         
         if (!empty($result) && $result->num_rows > 0)
         {
             while($row = $result->fetch_assoc())
-
-            {?> <div class="produit_item">
+            {
+                ?> <div class="produit_item">
                 <div class="pro">
-                   <a href="produit.php"><img src= <?php echo $row['image'];?> alt="produit"></a>
+                   <a href="produit.php?idProduit=<?php echo $row['id'];?>"><img src= <?php echo $row['image'];?> alt="produit"></a>
              </div>
              <div class="description">
                  <h3 class="nom_produit">  <?php echo $row["NomProduit"]; ?></h3>

@@ -11,8 +11,8 @@ primary Key (id)
 );
 
 create table images(
-idimage int not null AUTO_INCREMENT,
-image varchar(250) not null,
+idpic int not null AUTO_INCREMENT,
+pic varchar(250) not null,
 FKsurproduit int not null,
 primary Key (idimage),
 foreign key (FKsurproduit) references produit(id)
@@ -56,10 +56,19 @@ prenom varchar(35) NOT NULL,
 nomutilisateur varchar(35) not null,
 courriel varchar(50)not null,
 motdepasse varchar(200) not null,
+thecount int not null,
+verrouiller varchar(30) not null,
 primary Key (iduser)
 );
-insert into user(Nom, prenom , nomutilisateur , courriel , motdepasse)
-values('lamia', 'khadraoui', 'lami_khad', 'lamiae@gmail.la', '123');
+
+
 
 select * from utilisateur;
-select  count(*) from utilisateur where iduser=1;
+select  count(*) exist from utilisateur where nomutilisateur= 'lamiae5';
+
+select count(*) from utilisateur where nomutilisateur='lamiae5' and motdepasse='1';
+
+update utilisateur set verrouiller='non' where nomutilisateur="coco1" ;
+
+
+
