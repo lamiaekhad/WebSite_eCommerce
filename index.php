@@ -23,8 +23,10 @@ include "header_code.php";
         </div> 
         <div class="pro_container">
     <?php
+    
     $myProdect = new produit();
     $product = $myProdect->getProductName(); 
+    
     ?>
         </div>
     </section>

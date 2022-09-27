@@ -7,7 +7,9 @@ private $userName="root";
 private $password="";
 private $dbName="projet_final";
 private $conn;
+
 function __construct(){}
+
 public function getConnection(){
     
     try

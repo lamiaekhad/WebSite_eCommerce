@@ -64,13 +64,14 @@ public function getNewAccount(){
             try{
 
                 $myconn = $myDataBase->getConnection(); 
-                $sql="INSERT INTO utilisateur (Nom, prenom , nomutilisateur ,courriel , motdepasse, thecount, verrouiller ) VALUES (?,?,?,?,?,?,?);";
+                $sql="INSERT INTO utilisateur (Nom, prenom , nomutilisateur ,courriel , motdepasse, thecount, verrouiller,administrateur ) VALUES (?,?,?,?,?,?,?,?);";
                 $stmt = $myconn->prepare($sql);
                 //hashage mot de passe
                 $motDePasseHasher = password_hash($motDePasse, PASSWORD_DEFAULT);
                 $count = 0;
                 $verrouiller ="non";
-                $stmt->bind_param("sssssss" ,$nom , $prenom ,$username ,$courriel ,$motDePasseHasher ,$count ,$verrouiller );
+                $admin='non';
+                $stmt->bind_param("ssssssss" ,$nom , $prenom ,$username ,$courriel ,$motDePasseHasher ,$count ,$verrouiller,$admin );
                 $stmt->execute();
                 $stmt->close();
                 ?> <h3>cA Marche!!</h3> <?php
@@ -117,7 +118,7 @@ public function getNewAccount(){
                      if($row = mysqli_fetch_assoc($result))
                      {
                         $pwdCheck=password_verify($thePassword, $row['motdepasse']);
-
+                        
                         if($pwdCheck == false )
                         {
                             if(self::getcount($theuser)>=3)
@@ -128,22 +129,32 @@ public function getNewAccount(){
                             }
                             else
                             {
-                                ?> <h3> Mot de passe incorrectddddd</h3> <?php
+                                ?> <h3> Mot de passe incorrect</h3> <?php
                                 //update +1!!!
                                 self::UpdateCount($theuser);
                             }
                         }
-                        else if($pwdCheck == true || !self::getcount($theuser)<3 || self::getVerrouiller($theuser) == "non" )
+                        else if( $pwdCheck == true && self::getcount($theuser)<3 && self::getVerrouiller($theuser) == "non" )
                         {
-                            $_SESSION['Client'] = $row['nomutilisateur'];
-                            ?> <h1> Bienvenue <?php echo $theuser?> </h1> <?php 
-                            //count to 0
-                            self::InitializeTheCount($theuser);
+                            if(self::getAdmin($theuser) == 'non'){
+
+                                $_SESSION['Client'] = $row['nomutilisateur'];
+                                ?> <h1> Bienvenue <?php echo $theuser?> </h1> <?php 
+                                //count to 0
+                                self::InitializeTheCount($theuser);
+
+                            }elseif(self::getAdmin($theuser) == 'oui'){
+
+                                $_SESSION['Administrateur'] = $row['nomutilisateur'];
+                                self::InitializeTheCount($theuser);
+                                echo "<script> window.location.replace('compte_admin.php') </script>";
+                            }
+                            
                         }
                         else
                         {
 
-                            ?> <h3> Ce compte est Verrouiller contacter admin</h3> <?php
+                            ?> <h3> Ce compte est Verrouiller contacter admin </h3> <?php
                         }
                      }
                      else
@@ -219,7 +230,31 @@ public function getNewAccount(){
         }
         return $Verrouiller;
     }
+    public static function getAdmin($NomUtilisateur){
 
+        $myDataBase = new DataBaseConnectionManager();
+        try{
+            
+            $myconn = $myDataBase->getConnection(); 
+            $sql = "SELECT administrateur from utilisateur where nomutilisateur='".$NomUtilisateur."'";
+            $result = $myconn->query($sql);
+            if (!empty($result) && $result->num_rows > 0)
+            {
+                while($row = $result->fetch_assoc())
+                {
+                   $admin = $row["administrateur"];
+                }
+            }
+             
+        }
+        catch(Exception $e)
+        {
+            echo 'Échec lors de la connexion : ' . $e->getMessage();
+        }finally{
+            $myconn->close();
+        }
+        return $admin;
+    }
     public static function UpdateCount($NomUtilisateur){
 
         $myDataBase = new DataBaseConnectionManager();
@@ -253,10 +288,11 @@ public function getNewAccount(){
         }finally{
             $myconn->close();
         }
-       
+
     }
 
     public static function VerrouillerCompte($NomUtilisateur){
+
         $myDataBase = new DataBaseConnectionManager();
         try{
             $close="oui";
@@ -271,7 +307,13 @@ public function getNewAccount(){
         }finally{
             $myconn->close();
         }
+        
     }
+
+    
+    
+
 }
+
 
 ?>

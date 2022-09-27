@@ -152,6 +152,9 @@
     margin-top: 30px;
     cursor: pointer;
 }
+#map{
+    height: 100%;
+}
 @media (min-width: 800px){
 
     .flex_contact{

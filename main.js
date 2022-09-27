@@ -14,3 +14,18 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
+let choix = true;
+
+function change(){
+  let button = document.getElementById("coeur");
+  if (choix==true){
+    alert("Do you really love it");
+    button.style.fill = "red";
+    choix = false;
+  }else{
+    button.style.fill = "black";
+    choix = true;
+  }
+}
+

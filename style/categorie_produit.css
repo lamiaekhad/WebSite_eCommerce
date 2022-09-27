@@ -3,8 +3,9 @@
 }
 #prduit1 .pro{
     width: 250px;
-    min-width: 250px;
-    padding: 10px;
+    min-width: 280px;
+    height: auto;
+    padding: 5px;
     border: 1px solid rgba(189, 189, 193, 0.408) ;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(189, 189, 193, 0.408);

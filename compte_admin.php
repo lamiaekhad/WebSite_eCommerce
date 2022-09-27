@@ -14,16 +14,17 @@ include "header_code.php";
     <h1 class="titre_compte">
         Compte administrateur
     </h1>
-
-    <div class="choix_admin">
-        <label class="text_options" for="options"> Options:    </label>
-        <select class="option" id="options">
-            <option value="">--Veuillez sélectionner une option--
-            <option value="Ajouter">Ajouter Produit</option>
-            <option value="Supprimer">Supprimer Produit</option>
-            <option value="modifier">Modifier Produit</option>
-        </select>
-    </div>
+    <form method="Post" action="">
+        <div class="choix_admin">
+            <label class="text_options" for="options"> Options:    </label>
+            <select class="option" id="options">
+                <option value="">--Veuillez sélectionner une option--
+                <option value="Ajouter">Ajouter Produit</option>
+                <option value="Supprimer">Supprimer Produit</option>
+                <option value="modifier">Modifier Produit</option>
+            </select>
+        </div>
+    </form>
 </section>
 
 <?php

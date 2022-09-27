@@ -1,0 +1,80 @@
+#slider{
+    overflow: hidden;
+}
+
+.image_slide{
+    width:  100px;
+    height: 500px;
+    filter: brightness(50%)
+
+}
+#slider figure{
+    position: relative;
+    margin: 0;
+    width: 500%;
+    left: 0;
+    animation: 15s slider infinite;
+}
+
+#slider figure img{
+   float: left;
+   width: 20%;
+   object-fit: cover;
+}
+.caroussel_text{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top:200px;
+    padding-left: 9%;
+    color: white;
+    font-size: 250%;
+    
+    
+    
+}
+.pad{
+    margin-top: 50px;
+    
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left:-400%;
+    }
+
+}
+@media  (min-width: 800px) {
+
+    .caroussel_text{
+        text-align: left;
+    }
+
+}
