@@ -20,7 +20,7 @@ let choix = true;
 function change(){
   let button = document.getElementById("coeur");
   if (choix==true){
-    alert("Do you really love it");
+    alert("Confirmation");
     button.style.fill = "red";
     choix = false;
   }else{

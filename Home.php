@@ -2,7 +2,6 @@
 include "header_code.php";
 ?>
 
-
 <div id="slider" class="slider">
         
     <figure>

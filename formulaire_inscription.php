@@ -36,7 +36,6 @@ include "header_code.php";
 $control = new controller();
 $use=$control->getNewAccount();
 
-
 ?>
         <a href="acces.php"><p class="text_forget"> Se connecter à un compte existant </p></a>
     </div>
