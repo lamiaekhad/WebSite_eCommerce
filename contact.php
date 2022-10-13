@@ -21,11 +21,11 @@ include "header_code.php";
                      <div>
                         <form method="POST" action="contact.php">
 
-                           <input class="input_text" type="text" id="fname" name="Name" placeholder="Name">
-                           <input class="input_text" type="text" id="Sname" name="Surnames" placeholder="Surnames">
-                           <input class="input_text" type="text" id="email" name="Email" placeholder="Email">
-                           <input class="input_text" type="text" id="subject" name="Subject" placeholder="Subject">
-                           <textarea class="input_text" id="subject" name="message" placeholder="Message" style="height:130px"></textarea>
+                           <input class="input_text" type="text" id="fname" name="Name" placeholder="Name" required>
+                           <input class="input_text" type="text" id="Sname" name="Surnames" placeholder="Surnames" required>
+                           <input class="input_text" type="text" id="email" name="Email" placeholder="Email" required>
+                           <input class="input_text" type="text" id="subject" name="Subject" placeholder="Subject"required>
+                           <textarea class="input_text" id="subject" name="message" placeholder="Message" style="height:130px" required></textarea>
                         
                             <div class="button_start_with_send">
                                 <input class="send" type="submit" name="send" value="Send">
